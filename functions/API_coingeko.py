@@ -5,7 +5,7 @@ import datetime
 
 
 
-def API(name = 'bitcoin', curr = 'usd', days = '90'):
+def coingeko_api_data(name = 'bitcoin', curr = 'usd', days = '90'):
     
     """
         funkcja laczy sie z api, pobiera dane i zapisuje do df

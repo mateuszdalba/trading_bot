@@ -25,7 +25,7 @@ from plotly.subplots import make_subplots
 
 
 
-def live_prediction(asset='BTCUSDT',start="2022.03.17", end="2022.03.18", timeframe="1m"):
+def binance_api_data(asset='BTCUSDT',start="2022.03.17", end="2022.03.18", timeframe="1m"):
 
     api_key = os.environ.get('api1')
     secret_key = os.environ.get('secret1')
