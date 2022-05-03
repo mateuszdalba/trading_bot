@@ -6,17 +6,17 @@ import urllib.request, json
 import os
 import numpy as np
 from binance.client import Client
-import tensorflow as tf
-from tensorflow import keras
+#import tensorflow as tf
+#from tensorflow import keras
 
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error, mean_absolute_error, explained_variance_score, r2_score 
-from sklearn.metrics import mean_poisson_deviance, mean_gamma_deviance, accuracy_score
+#from sklearn.preprocessing import StandardScaler
+#from sklearn.metrics import mean_squared_error, mean_absolute_error, explained_variance_score, r2_score 
+#from sklearn.metrics import mean_poisson_deviance, mean_gamma_deviance, accuracy_score
 from sklearn.preprocessing import MinMaxScaler
 
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.layers import LSTM 
+#from tensorflow.keras.models import Sequential
+#from tensorflow.keras.layers import Dense, Dropout
+#from tensorflow.keras.layers import LSTM 
 from itertools import cycle
 
 import plotly.graph_objects as go

@@ -1,15 +1,25 @@
 import streamlit as st
-
+from streamlit_option_menu import option_menu
 
 from pages.explore_page import show_explore_page
 from pages.predict_page import show_predict_page
  
+st.set_page_config(layout="wide")
+#page = st.sidebar.selectbox("Choose page", ("Explore","Predict"))
 
-page = st.sidebar.selectbox("Choose page", ("Predict", "Explore"))
+with st.sidebar:
+    page = option_menu('Navigate', ["Trading Bot",'DummyPage'], 
+        icons=['house', 'cloud-upload'], 
+        menu_icon="cast", default_index=0,
+        styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "15px"}, 
+        "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "green"},
+    })
 
 
-
-if page == "Predict":
+if page == "DummyPage":
     show_predict_page()
-else:
+elif page =='Trading Bot':
     show_explore_page()
