@@ -8,18 +8,18 @@ st.set_page_config(layout="wide")
 #page = st.sidebar.selectbox("Choose page", ("Explore","Predict"))
 
 with st.sidebar:
-    page = option_menu('Navigate', ["Trading Bot",'DummyPage'], 
+    page = option_menu('Navigate', ["Trading Bot",'Crypto Finder'], 
         icons=['house', 'cloud-upload'], 
         menu_icon="cast", default_index=0,
         styles={
         "container": {"padding": "0!important", "background-color": "#fafafa"},
         "icon": {"color": "orange", "font-size": "15px"}, 
         "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
+        "nav-link-selected": {"background-color": "black"},
     })
 
 
-if page == "DummyPage":
+if page == "Crypto Finder":
     show_predict_page()
 elif page =='Trading Bot':
     show_explore_page()

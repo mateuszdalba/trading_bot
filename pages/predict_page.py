@@ -7,6 +7,6 @@ import numpy as np
 
 def show_predict_page():
     
-    st.title('Predict Page')
+    st.title('Crypto Finder')
     
-    st.write('ToDo')
+    st.write('Find your crypto you want to trade')
